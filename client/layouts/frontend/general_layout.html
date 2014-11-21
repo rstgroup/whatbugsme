@@ -1,0 +1,35 @@
+<template name="generalLayout">
+  <header class="github">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class='pull-left'>
+            Hello, random citizen!
+          </div>
+          <div class='pull-right'>
+            Check out our 
+            <a href="https://github.com/rstgroup"><i class="fa fa-github"></i> github profile </a>
+            and collaborate with us!
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  {{> yield }}
+  <footer class="rst">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class='pull-left'>
+            This project is part of RST-IT Open Source initiative.
+          </div>
+          <div class='pull-right'>
+            Check out our 
+            <a href="https://github.com/rstgroup"><i class="fa fa-github"></i> github profile </a>
+            and collaborate with us!
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</template>
