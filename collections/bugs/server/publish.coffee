@@ -5,6 +5,9 @@ Meteor.publish "bugs_with_votes", () ->
     handle: this
     collection: Bugs
     filter: {companyId: {$in: companyIds}}
+    options: {
+      sort: { createdAt: -1 }
+    }
     mappings: [{
       key: "bugId"
       collection: Votes
