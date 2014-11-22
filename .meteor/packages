@@ -4,8 +4,6 @@
 # but you can also edit it by hand.
 
 meteor-platform
-autopublish
-insecure
 coffeescript
 iron:router
 fourseven:scss
@@ -16,4 +14,3 @@ aldeed:autoform
 matb33:collection-hooks
 aldeed:collection2
 accounts-password
-

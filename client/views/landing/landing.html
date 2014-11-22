@@ -12,8 +12,24 @@
             Dont be afraid to tell others <b>what bugs you</b> about your workplace! 
           </h1>
         </div>
-        <div class="col-md-6">
-          {{> userSignUp}}
+        <div class="col-md-5 col-md-offset-1">
+          <div role="tabpanel">
+            <ul class="nav nav-tabs nav-justified" role="tablist">
+              <li role="presentation" class="active"><a href="#register" aria-controls="register" role="tab" data-toggle="tab">Register</a></li>
+              <li role="presentation"><a href="#login" aria-controls="login" role="tab" data-toggle="tab">Login</a></li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <div role="tabpanel" class="tab-pane active" id="register">
+                {{> userSignUp}}
+              </div>
+              <div role="tabpanel" class="tab-pane" id="login">
+                {{> userSignIn}}
+              </div>
+            </div>
+
+          </div>
         </div>
       </div>
       <div class="sticky">

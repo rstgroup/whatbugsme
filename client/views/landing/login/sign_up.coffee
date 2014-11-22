@@ -8,15 +8,13 @@ AutoForm.hooks {
     onSubmit: (doc) ->
       @event.stopPropagation()
       that = this
-      Accounts.createUser({email: doc.email, password : doc.password, username: doc.username}, (error) ->
+      Meteor.call '/api/accounts/create', doc, (error, result) ->
         if error
           Session.set("error", "Cannot sign up")
         else
           Session.set("success", "Signed up successfully")
-          if Meteor.isClient
-            Router.go(AccountsHelper.afterSignInPath())
+          Router.go(AccountsHelper.afterSignInPath())
         that.done()
-      )
       false
   }
 }

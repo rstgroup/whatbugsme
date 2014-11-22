@@ -8,7 +8,7 @@ that = this
     label: "Email"
     custom: () ->
       if Meteor.isClient && this.isSet
-        Meteor.call 'accountsIsEmailAvailable', @value, (error, result) ->
+        Meteor.call '/api/accounts/is_email_uniq', @value, (error, result) ->
           if !result
             that.Schemas.UserSignUp.namedContext('signUpForm').addInvalidKeys([{name: 'email', type: 'notUnique'}])
 
@@ -16,15 +16,15 @@ that = this
     type: String,
     label: "Password"
     min: 6
-  username:
+  companyName:
     type: String,
-    label: "Username"
+    label: "Company Name"
     min: 3
     custom: () ->
       if Meteor.isClient && this.isSet
-        Meteor.call 'accountsIsUsernameAvailable', @value, (error, result) ->
+        Meteor.call "/api/companies/is_name_uniq", @value, (error, result) ->
           if !result
-            that.Schemas.UserSignUp.namedContext('signUpForm').addInvalidKeys([{name: 'username', type: 'notUnique'}])
+            that.Schemas.UserSignUp.namedContext('signUpForm').addInvalidKeys([{name: 'companyName', type: 'notUnique'}])
   passwordConfirmation:
     type: String,
     min: 6

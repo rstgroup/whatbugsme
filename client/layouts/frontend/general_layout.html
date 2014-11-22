@@ -4,7 +4,12 @@
       <div class="row">
         <div class="col-xs-12">
           <div class='pull-left'>
-            Hello, random citizen!
+            Hello, 
+            {{#if currentUser}}
+              <a href="{{pathFor route='dashboard'}}">{{currentUser.userName }}</a>
+            {{else}}
+              random citizen!
+            {{/if}}
           </div>
           <div class='pull-right'>
             Check out our 
