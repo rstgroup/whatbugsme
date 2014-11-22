@@ -1,0 +1,50 @@
+@import "client/lib/css/main"
+
+.bug
+  height: 70px
+  border-bottom: 1px solid $border-gray
+  .buttons
+    float: right
+  .counter
+    float: left
+    width: 90px
+    padding: 20px 0 0
+    font-size: 18px
+    font-weight: 300
+    text-align: center
+    &.green
+      color: $green
+    &.red
+      color: $red
+  a.btn
+    text-transform: uppercase
+    width: 90px
+    height: 70px
+    padding: 30px 0
+    margin: 0
+    text-align: center
+    font-size: 12px
+    background: transparent
+    float: right
+    color: $gray
+    &:last-child
+      border-right: 1px solid $border-gray
+    &.selected
+      color: #fff
+      &.agree
+        background: $green
+      &.disagree
+        background: $red
+  .core
+    margin: 0 180px 0 90px
+    padding-top: 25px
+    h4
+      margin: 0
+      padding: 0
+      font-size: 14px
+      font-weight: 300
+    p
+      padding: 0
+      margin: 0
+      font-size: 12px
+      font-weight: bold

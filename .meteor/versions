@@ -39,6 +39,7 @@ iron:url@1.0.2
 jquery@1.0.1
 json@1.0.1
 launch-screen@1.0.0
+lepozepo:publish-with-relations@1.1.0
 livedata@1.0.11
 localstorage@1.0.1
 logging@1.0.5

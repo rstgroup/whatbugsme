@@ -11,6 +11,9 @@ mizzao:bootstrap-3
 chrismbeckett:fontawesome4
 mrt:publish-with-relations
 aldeed:autoform
-matb33:collection-hooks
 aldeed:collection2
 accounts-password
+mrt:moment
+lepozepo:publish-with-relations
+matb33:collection-hooks
+

@@ -12,4 +12,13 @@
     type: String
     label: "user id"
     regEx: SimpleSchema.RegEx.Id
+  createdAt:
+    type: Date,
+    autoValue: () ->
+      if (@isInsert) 
+        return new Date
+      else if this.isUpsert
+        return {$setOnInsert: new Date}
+      else
+        @unset()
 )

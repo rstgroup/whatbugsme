@@ -1,0 +1,1 @@
+@Bugs = new Mongo.Collection("bugs")

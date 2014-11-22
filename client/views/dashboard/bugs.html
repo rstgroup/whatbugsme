@@ -1,0 +1,10 @@
+<template name="bugs">
+  {{> createBug}}
+  <div class="bugs-wrapper">
+    <div class="container">
+      {{#each bugs}}
+        {{> bug}}
+      {{/each}}
+    </div>
+  </div>
+</template>

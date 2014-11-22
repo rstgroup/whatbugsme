@@ -1,0 +1,15 @@
+<template name="bug">
+  <div class="bug">
+    <div class="counter {{conterClass}}">
+      {{vote}}
+    </div>
+    <div class="buttons">
+      <a class="btn disagree {{aggreed false}}">{{btnText false}}</a>
+      <a class="btn agree {{aggreed true}}">{{btnText true}}</a>
+    </div>
+    <div class="core">
+      <h4>{{name}}</h4>
+      <p>{{createdFromNow}}</p>
+    </div>
+  </div>
+</template>
