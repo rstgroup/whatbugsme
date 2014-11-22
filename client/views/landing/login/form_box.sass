@@ -1,0 +1,70 @@
+@import "client/lib/css/main"
+
+.form-box
+  background: #fff
+  width: 420px
+  padding: 0 25px
+  color: $gray
+  header
+    border-bottom: 1px solid $border-gray
+    margin: 0 -25px
+    padding: 25px 25px 10px
+    h2
+      margin: 0
+      font-size: 18px
+      font-weight: normal
+      padding: 4px 0
+      b
+        color: $green
+  .form-group
+    margin: 0 -25px
+    padding: 6px 25px 10px
+    border-bottom: 1px solid $border-gray
+    position: relative
+    // @include transition (all 0.3s ease-in-out)
+    label
+      color: $lighter-gray
+      text-transform: uppercase
+      font-weight: normal
+      margin-top: 10px
+      margin-bottom: 1px
+    input
+      border-radius: 0
+      background: transparent
+      border: none
+      border-radius: none
+      padding: 10px 0
+      box-shadow: none
+      font-weight: normal
+      // @include placeholder
+        // color: $lightBlue
+    .help-block
+      position: absolute
+      top: 11px
+      right: 25px
+      font-size: 12px
+    &.has-error
+      // @include transition (all 0.3s ease-in-out)
+      background: #fff1f1
+      input
+        box-shadow: none !important
+    &.focused
+      // @include transition (all 0.3s ease-in-out)
+      background: #f2f6fa
+      &.has-error
+        // @include transition (all 0.3s ease-in-out)
+        background: #fccdcd
+  .buttons
+    margin: 0 -25px
+    overflow: hidden
+    button
+      width: 100%
+      padding: 25px
+    p
+      padding: 10px
+      float: right
+      width: 50%
+      margin: 0
+  .select2-container
+    a
+      border: none

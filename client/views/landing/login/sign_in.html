@@ -1,0 +1,20 @@
+<template name='userSignIn'>
+  <div class="form-box">
+    <header>
+      <h2>Login</h2>
+    </header>
+    {{ #autoForm schema="Schemas.UserSignIn" id="signInForm"}}
+      {{> afQuickField name='email' placeholder="Write your e-mail here" }}
+      {{> afQuickField name='password' type="password" placeholder="Give your password" }}
+      <div class="buttons">
+        <button class="btn btn-success" type='submit'>Sign In</button>
+        <p class="text-muted text-center">
+            <small>
+              Don't have an account?<br/>
+              <a href="{{pathFor 'userSignUp'}}">Create one</a>
+            </small>
+        </p>
+      </div>
+    {{ /autoForm}}
+  </div>
+</template>
