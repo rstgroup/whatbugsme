@@ -3,8 +3,8 @@
     if !Meteor.loggingIn()
       if !Meteor.user()
         Session.set('redirectedFrom', router.path)
-        Router.go('/users/sign-in')
-        Session.set('error', i18n('user.labels.signInRequired'))
+        Router.go('/')
+        Session.set('error', "You have to be signed in to continue")
       else
         Session.set('redirectedFrom', null)
         router.next()

@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-xs-12">
           <div class="buttons">
-            <a href="#" class="btn btn-link"><i class="fa fa-user"></i> Invite new user</a>
+            <a href="#" class="btn btn-link invite-link"><i class="fa fa-user"></i> Invite new user</a>
             <a href="{{pathFor route='logout'}}" class="btn btn-link"><i class="fa fa-power-off"></i> Log out</a>
           </div>
           <img src="logo.png">
@@ -12,23 +12,25 @@
       </div>
     </div>
   </div>
-  <div class="invitation-form">
-    <div class="container">
-      <div class="row">
-        {{ #autoForm collection="Invitations" id="createInvitation" type="insert"}}
-          {{> afFieldInput name='companyId' value=company._id type="hidden"}}
-          {{> afFieldInput name='userId' value=currentUser._id type="hidden"}}
-          <div class="col-xs-2">
-            <label>Invite new user:</label>
-          </div>
-          <div class="col-xs-8">
-            {{> afQuickField name='email' placeholder="Write your friend's email here and start grumbling together..." label=false }}
-          </div>
-          <div class="col-xs-2">
-            <button type="submit" class="btn btn-block btn-transparent">INVITE USER</button>
-          </div>
-        {{ /autoForm}}
+  {{#if showInvitation}}
+    <div class="invitation-form">
+      <div class="container">
+        <div class="row">
+          {{ #autoForm collection="Invitations" id="createInvitation" type="insert"}}
+            {{> afFieldInput name='companyId' value=company._id type="hidden"}}
+            {{> afFieldInput name='userId' value=currentUser._id type="hidden"}}
+            <div class="col-xs-2">
+              <label>Invite new user:</label>
+            </div>
+            <div class="col-xs-8">
+              {{> afQuickField name='email' placeholder="Write your friend's email here and start grumbling together..." label=false }}
+            </div>
+            <div class="col-xs-2">
+              <button type="submit" class="btn btn-block btn-transparent">INVITE USER</button>
+            </div>
+          {{ /autoForm}}
+        </div>
       </div>
     </div>
-  </div>
+  {{/if}}
 </template>
