@@ -26,6 +26,8 @@
     padding-left: 0
     padding-right: 0
   input
+    overflow: hidden
+    text-overflow: ellipsis
     padding: 10px 0
     border: none
     border-radius: none
@@ -51,3 +53,9 @@
         opacity: 1
       i
         padding: 0 5px
+
+@media(max-width: $screen-sm-max)
+  .invitation-form
+    .toggle-button
+      position: relative
+      margin-bottom: -10px

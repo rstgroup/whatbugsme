@@ -1,3 +1,5 @@
+@import "client/lib/css/main"
+
 section.branding
   background: #209150 url("branding.jpg") no-repeat 50% 50%
   height: 96vh
@@ -18,6 +20,28 @@ section.branding
     text-align: center
     a i
       padding: 0 10px
+  .form-box
+    margin-bottom: 50px
+
+@media(max-width: $screen-sm-max)
+  section.branding
+    height: auto
+    h1
+      padding: 20px 0
+    .sticky
+      position: relative
+      top: auto
+      bottom: auto
+      margin-bottom: 20px
+    .nav-tabs li 
+      float: left
+      width: 50%
+      a
+        margin-bottom: 0
+      &.active:hover a
+        border-bottom: transparent
+
+
 
 
 section.features

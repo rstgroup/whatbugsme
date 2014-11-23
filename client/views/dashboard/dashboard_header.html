@@ -7,7 +7,7 @@
             <a href="#" class="btn btn-link invite-link"><i class="fa fa-user"></i> Invite new user</a>
             <a href="{{pathFor route='logout'}}" class="btn btn-link"><i class="fa fa-power-off"></i> Log out</a>
           </div>
-          <img src="logo.png">
+          <img class="hidden-xs" src="logo.png">
         </div>
       </div>
     </div>
@@ -19,13 +19,13 @@
           {{ #autoForm collection="Invitations" id="createInvitation" type="insert"}}
             {{> afFieldInput name='companyId' value=company._id type="hidden"}}
             {{> afFieldInput name='userId' value=currentUser._id type="hidden"}}
-            <div class="col-xs-2">
+            <div class="col-lg-2 col-md-3">
               <label>Invite new user:</label>
             </div>
-            <div class="col-xs-8">
+            <div class="col-lg-8 col-md-6">
               {{> afQuickField name='email' placeholder="Write your friend's email here and start grumbling together..." label=false }}
             </div>
-            <div class="col-xs-2">
+            <div class="col-lg-2 col-md-3">
               <button type="submit" class="btn btn-block btn-transparent">INVITE USER</button>
             </div>
           {{ /autoForm}}
