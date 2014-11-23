@@ -57,6 +57,7 @@ mrt:publish-with-relations@0.1.5
 npm-bcrypt@0.7.7
 observe-sequence@1.0.3
 ordered-dict@1.0.1
+ovcharik:alertify@0.3.11
 random@1.0.1
 reactive-dict@1.0.4
 reactive-var@1.0.3
