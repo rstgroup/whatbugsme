@@ -12,4 +12,23 @@
       </div>
     </div>
   </div>
+  <div class="invitation-form">
+    <div class="container">
+      <div class="row">
+        {{ #autoForm collection="Invitations" id="createInvitation" type="insert"}}
+          {{> afFieldInput name='companyId' value=company._id type="hidden"}}
+          {{> afFieldInput name='userId' value=currentUser._id type="hidden"}}
+          <div class="col-xs-2">
+            <label>Invite new user:</label>
+          </div>
+          <div class="col-xs-8">
+            {{> afQuickField name='email' placeholder="Write your friend's email here and start grumbling together..." label=false }}
+          </div>
+          <div class="col-xs-2">
+            <button type="submit" class="btn btn-block btn-transparent">INVITE USER</button>
+          </div>
+        {{ /autoForm}}
+      </div>
+    </div>
+  </div>
 </template>

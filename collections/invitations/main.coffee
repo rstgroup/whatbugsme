@@ -1,0 +1,1 @@
+@Invitations.attachSchema(@Schemas.Invitation)

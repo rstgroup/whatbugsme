@@ -1,0 +1,21 @@
+<template name="invitation">
+  <section class="branding">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="logo-line"><img src="/logo.png"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <h1>
+            You have been invited to start grumbling about <b>{{company.name}}</b>
+          </h1>
+        </div>
+        <div class="col-md-5 col-md-offset-1">
+          {{> userJoin}}
+        </div>
+      </div>
+    </div>
+  </section>
+</template>
