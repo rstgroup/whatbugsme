@@ -18,6 +18,7 @@ AutoForm.hooks {
           Session.set("error", "Cannot sign up")
         else
           Session.set("success", "Signed up successfully")
+          Meteor.loginWithPassword(doc.email, doc.password)
           Router.go(AccountsHelper.afterSignInPath())
         that.done()
       false

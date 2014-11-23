@@ -8,7 +8,7 @@
         Hi
 
         You have received an invitation to whatbugsyou
-        just visit: localhost://invitation/#{doc._id}
+        just visit: #{Meteor.absoluteUrl()}invitation/#{doc._id}
 
         Thanks
       """
