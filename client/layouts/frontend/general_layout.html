@@ -25,20 +25,22 @@
     </div>
   </header>
   {{> yield }}
-  <footer class="rst">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12">
-          <div class='pull-left'>
-            This project is part of <a href="http://rst-it.com">RST-IT</a> Open Source initiative.
-          </div>
-          <div class='pull-right hidden-xs'>
-            Check out our
-            <a href="http://rst-it.com/our-code"><i class="fa fa-github"></i> open source projects </a>
-            and collaborate with us!
+  {{#unless is_mobile}}
+    <footer class="rst">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class='pull-left'>
+              This project is part of <a href="http://rst-it.com">RST-IT</a> Open Source initiative.
+            </div>
+            <div class='pull-right hidden-xs'>
+              Check out our
+              <a href="http://rst-it.com/our-code"><i class="fa fa-github"></i> open source projects </a>
+              and collaborate with us!
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
+  {{/unless}}
 </template>

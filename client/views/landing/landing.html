@@ -7,11 +7,13 @@
         </div>
       </div>
       <div class="row">
+        {{#unless is_mobile}}
         <div class="col-lg-6 col-md-5">
           <h1>
             Don't be afraid to tell others <b>what bugs you</b> about your workplace! 
           </h1>
         </div>
+        {{/unless}}
         <div class="col-lg-5 col-lg-offset-1 col-md-6 col-md-offset-1">
           <div role="tabpanel">
             <ul class="nav nav-tabs nav-justified" role="tablist">
@@ -32,6 +34,7 @@
           </div>
         </div>
       </div>
+      {{#unless is_mobile}}
       <div class="sticky">
         <a href="#features" class="btn btn-transparent">
           <i class="fa fa-caret-down"></i>
@@ -39,40 +42,43 @@
           <i class="fa fa-caret-down"></i>
         </a>
       </div>
+      {{/unless}}
     </div>
   </section>
-  <section class="features" id="features">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-4">
-          <h3><i class="fa fa-user"></i> Anonymous</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  {{#unless is_mobile}}
+    <section class="features" id="features">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <h3><i class="fa fa-user"></i> Anonymous</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.
+            </p>
+            <p>
+              Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+          <div class="col-sm-4">
+            <h3><i class="fa fa-sort-amount-asc"></i> Vote for the entries</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat.
-          </p>
-          <p>
-            Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-        </div>
-        <div class="col-sm-4">
-          <h3><i class="fa fa-sort-amount-asc"></i> Vote for the entries</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat.</p>
-        </div>
-        <div class="col-sm-4">
-          <h3><i class="fa fa-github"></i> OpenSource</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat.</p>
+            consequat.</p>
+          </div>
+          <div class="col-sm-4">
+            <h3><i class="fa fa-github"></i> OpenSource</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat.</p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  {{/unless}}
 </template>
