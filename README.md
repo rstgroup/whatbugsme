@@ -5,7 +5,7 @@ Probably the most awesome opensource app written in <a href="https://www.meteor.
 ## How it works
 
 1. create new account,
-2. write what's pisses you in your workplace,
+2. write what irritates you in your workplace,
 3. share this with others,
 4. focus on the most important problems.
 
