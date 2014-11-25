@@ -19,7 +19,7 @@ WhatBugsMe is created and maintained by <a href="http://rst-it.com">RST-IT.com</
 
 ## Install locally
 
-If our hosted solution is not enought - you could grab the code and install wherever you like. But remember - it works on linux or osx.
+If our hosted solution is not enough - you could grab the code and install wherever you like. But remember - it works on linux or osx.
 
 1. run terminal
 2. Install meteorjs: `curl https://install.meteor.com/ | sh`
