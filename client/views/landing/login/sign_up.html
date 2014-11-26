@@ -3,7 +3,7 @@
     <header>
       <h2>Create your <b>free account</b>!</h2>
     </header>
-    {{ #autoForm schema="Schemas.UserSignUp" id="signUpForm"}}
+    {{ #autoForm schema="Schemas.UserSignUp" id="signUpForm" }}
       {{> afQuickField name='email' placeholder="Write your e-mail here" }}
       {{> afQuickField name='companyName' placeholder="Write your unique company name" }}
       {{> afQuickField name='password' type="password" placeholder="Give your password" }}
@@ -11,6 +11,6 @@
       <div class="buttons">
         <button class="btn btn-primary" type='submit'>Register now</button>
       </div>
-    {{ /autoForm}}
+    {{ /autoForm }}
   </div>
 </template>
