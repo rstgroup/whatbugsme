@@ -3,9 +3,9 @@
     <div class="container">
       <div class="row">
         <div class="col-xs-12">
-          {{ #autoForm collection="Bugs" id="createBug" type="insert"}}
-            {{> afQuickField name='name' placeholder=placeholder label=false }}
-            {{> afFieldInput name='companyId' value=company._id type="hidden"}}
+          {{ #autoForm collection="Bugs" id="createBug" type="insert" }}
+            {{> afQuickField name='name' placeholder=placeholder label=false autofocus=true}}
+            {{> afFieldInput name='companyId' value=company._id type="hidden" }}
           {{ /autoForm}}
         </div>
       </div>
