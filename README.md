@@ -9,7 +9,7 @@ Probably the most awesome opensource app written in <a href="https://www.meteor.
 3. share this with others,
 4. focus on the most important problems.
 
-Visit hosted version on <a href="whatbugsme.co">whatbugsme.co</a>, or just install it on your serwer.
+Visit hosted version on <a href="http://whatbugsme.co">whatbugsme.co</a>, or just install it on your serwer.
 
 ## Author
 
