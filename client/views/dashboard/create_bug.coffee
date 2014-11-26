@@ -1,4 +1,5 @@
 Template.createBug.helpers {
   placeholder: () ->
-    "What bugs you today at #{@company.name}? Write it here..."
+    "What bugs you? Write it here..."
+
 }
