@@ -1,22 +1,49 @@
 @import "client/lib/css/main"
+$bez: cubic-bezier(.65,0,.31,1)
 
 .create-bug
   background: $ultra-light-gray
   height: 100px
+  position: relative
   input
     background: transparent
     border: none
     border-radius: none
-    padding: 50px 0
+    padding: 0
     font-size: 18px
+    line-height: 30px
+    height: 50px
+    box-shadow: none !important
+    margin-top: 25px
+    border-bottom: 1px solid lighten($gray, 20%)
+    color: transparent
+    @include transition(all 0.4s $bez)
     &:focus
       box-shadow: none !important
-    @include placeholder
-      color: #bababa
-      font-style: italic
+      border-color: $gray
+      color: #000
+      @include transition(all 0.4s $bez)
+  .control-label
+    position: absolute
+    top: 15px
+    left: 0px
+    font-size: 18px
+    line-height: 20px
+    font-style: italic
+    font-weight: normal
+    pointer-events: none
+    @include transition(all 0.4s $bez)
+
+  .focused
+    .control-label
+      top: -8px
+      left: 0
+      font-size: 12px
+      @include transition(all 0.4s $bez)
+
   .help-block
     position: absolute
-    bottom: 4px
+    bottom: -23px
     font-size: 12px
     padding: 0
     margin: 0

@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-xs-12">
           {{ #autoForm collection="Bugs" id="createBug" type="insert" }}
-            {{> afQuickField name='name' placeholder=placeholder label=false autofocus=true}}
+            {{> afQuickField name='name' autofocus=true}}
             {{> afFieldInput name='companyId' value=company._id type="hidden" }}
           {{ /autoForm}}
         </div>

@@ -3,7 +3,7 @@
 @Schemas.Bug = new SimpleSchema(
   name:
     type: String,
-    label: "What bugs you"
+    label: "What bugs you? Write it here"
     min: 3
   companyId: 
     type: String,
