@@ -4,7 +4,7 @@
       <h2>Create your <b>free account</b>!</h2>
     </header>
     {{ #autoForm schema="Schemas.UserJoin" id="signUpForm"}}
-      {{> afQuickField name='email' placeholder="Write your e-mail here" }}
+      {{> afQuickField name='email' placeholder="Write your e-mail here" value=invitedAddress }}
       {{> afQuickField name='password' type="password" placeholder="Give your password" }}
       {{> afFieldInput name='invitation' type="hidden" value=invitation._id }}
       {{> afQuickField name='passwordConfirmation' type="password" placeholder="Your password once again" }}
